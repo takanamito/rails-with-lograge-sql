@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/takanamito/lograge-sql.git
+  revision: 26204404b412bd97facb4eff28a833f29f866ae1
+  branch: before_eager_load
+  specs:
+    lograge-sql (1.2.0)
+      activerecord (>= 4, < 7.0)
+      lograge (~> 0.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -79,9 +88,6 @@ GEM
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    lograge-sql (1.2.0)
-      activerecord (>= 4, < 7.0)
-      lograge (~> 0.4)
     loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -170,7 +176,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.2)
   lograge
-  lograge-sql
+  lograge-sql!
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.3)
   spring
