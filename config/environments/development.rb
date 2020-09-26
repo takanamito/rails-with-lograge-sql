@@ -1,4 +1,8 @@
 Rails.application.configure do
+  logger = ActiveSupport::Logger.new(STDOUT)
+  config.log_tags = [:request_id]
+  config.logger = ActiveSupport::TaggedLogging.new(logger)
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
